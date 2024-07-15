@@ -25,4 +25,19 @@ Raspberry Pi Pico doesn't play well with Codespaces 😭 so:
     * 
 
 
+### If Python install doesn't work...
+Try this instead:
+* Start a powershell terminal in VS Code then type: 
+* `cd $env:USERPROFILE` 
+* `git clone https://github.com/pyenv-win/pyenv-win.git "$env:USERPROFILE\.pyenv"`
+* `[System.Environment]::SetEnvironmentVariable('PYENV',$env:USERPROFILE + "\.pyenv\pyenv-win\","User")`
+* `[System.Environment]::SetEnvironmentVariable('path', $env:USERPROFILE + "\.pyenv\pyenv-win\bin;" + $env:USERPROFILE + "\.pyenv\pyenv-win\shims;" + [System.Environment]::GetEnvironmentVariable('path', "User"),"User")`
+
+Close the PowerShell terminal and open a new one (again PowerShell).
+
+* `pyenv update`
+* `pyenv install 3.11.5`
+* `pyenv global 3.11.5`
+* `pyenv rehash`
+
 
