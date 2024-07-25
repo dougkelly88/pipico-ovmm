@@ -4,7 +4,7 @@
 On [Project AOC](https://www.microsoft.com/en-us/research/project/aim/) we are exploring using an analog-optical computer as alternative hardware to GPUs to accelerate machine learning inference and solving difficult optimisation problems. 
 
 
-A key part of this machine is the *optical vector-matrix multiplier* (OVMM): here, we will use a Raspberry Pi Pico microcontroller and some simple, cheap electronics to build an example OVMM machine. 
+A key part of this machine is the *optical vector-matrix multiplier* (OVMM): here, we will use a Raspberry Pi Pico microcontroller and some simple, cheap electronics to build an example OVMM machine - in this case, a 1-element vector multiplied by a 1x1 matrix 🙂
 
 ## Getting started
 Raspberry Pi Pico doesn't play well with Codespaces 😭 so:
@@ -23,21 +23,4 @@ Raspberry Pi Pico doesn't play well with Codespaces 😭 so:
     * Paste the URL in the box that pops up and hit enter
     * Choose a location on your computer to save the repo
     * 
-
-
-### If Python install doesn't work...
-Try this instead:
-* Start a powershell terminal in VS Code then type: 
-* `cd $env:USERPROFILE` 
-* `git clone https://github.com/pyenv-win/pyenv-win.git "$env:USERPROFILE\.pyenv"`
-* `[System.Environment]::SetEnvironmentVariable('PYENV',$env:USERPROFILE + "\.pyenv\pyenv-win\","User")`
-* `[System.Environment]::SetEnvironmentVariable('path', $env:USERPROFILE + "\.pyenv\pyenv-win\bin;" + $env:USERPROFILE + "\.pyenv\pyenv-win\shims;" + [System.Environment]::GetEnvironmentVariable('path', "User"),"User")`
-
-Close the PowerShell terminal and open a new one (again PowerShell).
-
-* `pyenv update`
-* `pyenv install 3.11.5`
-* `pyenv global 3.11.5`
-* `pyenv rehash`
-
 
