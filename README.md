@@ -35,7 +35,7 @@ Some of these parts come with pre-soldered headers, some don't. If you don't hav
 | Raspberry Pi Pico | https://proto-pic.co.uk/product/raspberry-pi-pico-one-tiny-fast-microcontroller | |
 | Breadboard-compatible Neopixel | https://proto-pic.co.uk/product/breadboard-friendly-rgb-smart-neopixel-pack-of-4 | These are nice to use in this project, but could equally drive other Neopixel form factors: these [8 pixel sticks](https://thepihut.com/products/adafruit-neopixel-stick-8-x-5050-rgbw-leds-natural-white-4500k) are pretty neat, and a way to extend the project. | 
 | Light sensor | https://thepihut.com/products/photo-transistor-light-sensor | |
-| Digital potentiometer | | Versions with more channels/|
+| Digital potentiometer | https://proto-pic.co.uk/product/sparkfun-com-10613-digital-potentiometer-10k | Versions with more channels/more bit depth available |
 
 ## Work experience exercises
 TODO: these are currently in a ppt, at some point I'll migrate to md and link from here. 
