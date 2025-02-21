@@ -34,18 +34,10 @@ def my_input(prompt):
     return_input = sys.stdin.readline().rstrip()
     return return_input
 def main():
-    #print("Please enter 2 binary 1 digit numbers: ")
     while True:
         try:
-            # update vector values IFF poll object has anything to say
-            #if poll_obj.poll(10):
-                #print("something arrived in the poll object")
-                #global input_num1
-                #input_num1 = sys.stdin.readline().rstrip()
             input_num1 = my_input("input the first of 2 binary digits:")
             print(f"digit 1 is: {input_num1}!")
-                #global input_num2
-                #input_num2 = sys.stdin.readline().rstrip()
             input_num2 = my_input("input the second of 2 binary digits")
             print(f"digit 2 is: {input_num2}!")
             break
@@ -53,17 +45,12 @@ def main():
             sleep(0.1)
         except KeyboardInterrupt:
             break
-    print("Finished main")
-    
     input_num1 = int(input_num1)
     input_num2 = int(input_num2)
     if input_num1 == (1):
-        nps[0] = (ON_VALUE, ON_VALUE, ON_VALUE)
+        nps[0] = (ON_VALUE,ON_VALUE, ON_VALUE)
         nps.write()
         print("LED on")
-        #time.sleep(5)
-        #nps[0] = (0, 0, 0)
-        #nps.write()
     elif input_num1 == (0): 
         nps[0] = (0, 0, 0)
         nps.write()
@@ -75,25 +62,23 @@ def main():
     time.sleep(2)
     det_value = detector.read_u16()  # reading analog pin
     print(f"detector value = {det_value:.3f}")  # printing the ADC value
-    if det_value > 970:
+    if det_value > 2000:
         output = 1
-    elif det_value < 970: 
+    elif det_value < 2000: 
         output =0
     print("your result is " + str(output))
+    #This piece of code is used to just continuosly print light detector readings so that the LED can be tested
+    # quit = False
+    #while not quit:
+        #time.sleep(1)
+        #det_value = detector.read_u16()  # reading analog pin
+        #print(f"detector value = {det_value:.3f}")
     _programme_end_ = my_input("Would you like to quit or go again. Type q/g")
     if _programme_end_== ("q"):
         return "q"
-        #quit = True
     elif _programme_end_ == ("g"):
         return _programme_end_
-    
-
-    #quit = False
-    #while not quit:
-        #time.sleep(1)
-        #this is to repeat gathering detector value data 
-        #det_value = detector.read_u16()  # reading analog pin
-        #print(f"detector value = {det_value:.3f}")
+        
 if __name__ == "__main__":
     x = main()
     while x == "g":
