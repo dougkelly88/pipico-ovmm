@@ -35,6 +35,3 @@ class MCP4101:
     def ratio(self):
         return self.val / 256.0
 
-   
-   
-
