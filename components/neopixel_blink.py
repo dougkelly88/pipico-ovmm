@@ -5,7 +5,7 @@ from utime import sleep
 N_PIXELS = 1
 ON_VALUE = 255
 
-nps = NeoPixel(Pin(4), N_PIXELS, bpp=3)
+nps = NeoPixel(Pin(15), N_PIXELS, bpp=3)
 # start off @ 50% brightness in red channel
 nps[0] = (128, 0, 0)
 

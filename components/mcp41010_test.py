@@ -5,9 +5,9 @@ from components.digital_pot.mcp41010 import MCP41010
 import time
 
 a = ADC(0)
-cs = Pin(17, Pin.OUT)
-s = SPI(0, sck=Pin(18), mosi=Pin(19), miso=Pin(16))
-m = MCP41010(s, cs)
+cs = Pin(1, Pin.OUT)
+s = SPI(0, sck=Pin(2), mosi=Pin(3), miso=Pin(0))
+m = MCP41010(s, cs) 
 
 potval: int = 0
 potval = m.set(potval)
@@ -20,7 +20,7 @@ try:
         # print("[ %5.3f %5.3f %5.3f ]" % (0.0, 3.3 * v / 65536, 3.3))
         potval = potval + direction
         potval = m.set(potval)
-        if potval == 128:
+        if potval == 255:
             direction = -1
         if potval == 0:
             direction = 1

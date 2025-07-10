@@ -31,5 +31,22 @@
         "titleBar.activeForeground": "#e7e7e7",
         "titleBar.inactiveBackground": "#2d17a999",
         "titleBar.inactiveForeground": "#e7e7e799"
-    }
+    }, 
+    "micropico.pyIgnore": [
+        "**/.picowgo",
+        "**/.micropico",
+        "**/.vscode",
+        "**/.gitignore",
+        "**/.git",
+        "**/.DS_Store",
+        "**/project.pico-go",
+        "**/env",
+        "**/venv",
+        "**/.venv",
+        "**/.idea",
+        "**/.mypy_cache",
+        "**/client",
+        "**/.mypy_cache/3.10", 
+        "**/README.md"
+    ]
 }

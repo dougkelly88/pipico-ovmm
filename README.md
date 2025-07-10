@@ -42,3 +42,12 @@ TODO: these are currently in a ppt, at some point I'll migrate to md and link fr
 
 ## Disclaimer
 There are hazards associated with any electronics project, and any light source. If you don't understand the risks, don't build it. If you're building this without my explicit supervision, I take no reponsibility etc etc. 
+
+## A tip to handle dependencies inside the project
+e.g. to access hardware modules that sit in `.\components` from a script that lives in `.\exercises`
+* Delete `.mypy_cache` folder from the project root - it'll come back again, so don't worry.
+* Or: depend on changes to `settings.json` to ensure that stuff like `.mypy_cache` doesn't get pushed to the microcontroller. 
+* Right click any file in the project in Explorer view and select "Upload project to Pico"
+* Should get confirmation of successful upload in lower right of VSCode window
+* Sometimes needs restart of VS Code to get this to work 🤷‍♂️
+* Note that [Thonny](https://thonny.org/) is a useful tool to browse what's actually on the Pico and to do any clearing up of old project files.
