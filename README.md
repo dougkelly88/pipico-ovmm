@@ -1,5 +1,5 @@
 
-# July 2024 work experience tutorials
+# July 2025 work experience tutorials
 
 On [Project AOC](https://www.microsoft.com/en-us/research/project/aim/) we are exploring using an analog-optical computer as alternative hardware to GPUs to accelerate machine learning inference and solving difficult optimisation problems. 
 
@@ -21,21 +21,36 @@ Raspberry Pi Pico doesn't play well with Codespaces 😭 so:
     * Choose a location on your computer to save the repo
     
 * VS Code should show a "recommended extensions" popup: you should install these. If it doesn't, go to the extensions tab on the left of the VS Code screen and search for "MicroPico"
+* To get the codebase to the right point to work through exercises, run the following commands:
+    - `git switch doug/start_here`
+    - `git branch <your first name>/ovmm`
+    - `git switch <your first name>/ovmm`
 
 ## Hardware shopping list
 
-Some of these parts come with pre-soldered headers, some don't. If you don't have a bunch of 2.54 mm headers and a soldering station, it's worth shopping around for pre-soldered alternatives. 
+Some of these parts come with pre-soldered headers, some don't. If you don't have a bunch of 2.54 mm headers and a soldering station, it's worth shopping around for pre-soldered alternatives. Alternatively: I've not tried these [press-fit headers](https://thepihut.com/products/2-54mm-0-1-pitch-press-fit-male-pin-header) myself but they look like they might work, subject to all the warnings in the product description. 
 
-| Part | Link | Comment |
-| --- | --- | --- |
-| Solderless breadboard | https://thepihut.com/products/breadboard-for-pico | All the bits for the project should fit on this form factor, but a larger board gives more space to work with. Version with markup for pico makes pin placement easier without constantly looking at the pin diagram, but isn't essential. |
-| Fixed length jumper wires | | |
-| M-F jumper wires | | |
-| M-M jumper wires | | Can use fixed length wires instead, which *most of the time* will result in a tidier build, but these are handy for debugging/first pass. |
-| Raspberry Pi Pico | https://proto-pic.co.uk/product/raspberry-pi-pico-one-tiny-fast-microcontroller | |
-| Breadboard-compatible Neopixel | https://proto-pic.co.uk/product/breadboard-friendly-rgb-smart-neopixel-pack-of-4 | These are nice to use in this project, but could equally drive other Neopixel form factors: these [8 pixel sticks](https://thepihut.com/products/adafruit-neopixel-stick-8-x-5050-rgbw-leds-natural-white-4500k) are pretty neat, and a way to extend the project. | 
-| Light sensor | https://thepihut.com/products/photo-transistor-light-sensor | |
-| Digital potentiometer | https://proto-pic.co.uk/product/sparkfun-com-10613-digital-potentiometer-10k | Versions with more channels/more bit depth available |
+| Part | Link | Price/pack (July '25) | Units/Pack | Units/Build | Cost/Build (July 25) | Notes |
+|------|------|----------------------|------------|-------------|------------|-------|
+| Pi pico 2 *with pre-soldered headers* | https://www.digikey.co.uk/en/products/detail/raspberry-pi/SC1632/26241102 | £4.41 | 1 | 1 | £4.41 |  |
+| Neopixel RGB LED | https://www.digikey.co.uk/en/products/detail/adafruit-industries-llc/1312/6565388 | £5.84 | 4 | 1 | £1.46 | [1] |
+| 8-bit 10k digital potentiometer | https://www.digikey.co.uk/en/products/detail/microchip-technology/MCP41010-E-P/593689 | £1.63 | 1 | 1 | £1.63 |  |
+| Solderless breadboard | https://www.digikey.co.uk/en/products/detail/dfrobot/FIT0096/7597069 | £2.08 | 1 | 1 | £2.08 | [2] |
+| M-M jumper wire "dupont-style" | https://www.digikey.co.uk/en/products/detail/adafruit-industries-llc/1957/6827090 | £1.43 | 20 | 10 | £0.715 |  |
+| M-F jumper wire "dupont-style" | https://www.digikey.co.uk/en/products/detail/adafruit-industries-llc/1954/6827087 | £1.43 | 20 | 4 | £0.286 |  |
+| 4k7 resistor (through-hole) | https://www.digikey.co.uk/en/products/detail/stackpole-electronics-inc/CF12JT4K70/1741152 | £0.07 | 1 | 1 | £0.07 |  |
+| LC shutter | https://thepihut.com/products/small-liquid-crystal-light-valve-controllable-shutter-glass | £2.80 | 1 | 1 | £2.80 |  |
+| Phototransistor | https://thepihut.com/products/photo-transistor-light-sensor | £1.00 | 1 | 1 | £1.00 |  |
+| Preformed jumper wire kit | https://thepihut.com/products/jumper-wire-kit-140-piece | £4.00 | 10 | 2 | £0.80 |  |
+| Breakaway 2.54 mm header pins | https://thepihut.com/products/break-away-0-1-36-pin-strip-male-header-black-10-pack | £3.50 | 360 | 10 | £0.097 |  |
+| | | | | | | |
+| **Project cost/build (July '25)** | | | | | **£15.35** |  |
+
+[1] I can't source these anywhere pre-soldered 🫤 I've not tried them myself but these push fit headers might be a reasonable solder-free alternative: https://thepihut.com/products/2-54mm-0-1-pitch-press-fit-male-pin-header
+
+[2] All the bits for the project should fit on this form factor, but a larger board gives more space to work with. [A version with markup for pico](https://thepihut.com/products/breadboard-for-pico) makes pin placement easier without constantly looking at the pin diagram, but isn't essential.
+
+Optomechanical bits not included here: four each of M3x18 mm hex socket cap bolts + M3 nuts, and 3D printed parts (see optomech\july_2025_build_stls). Worst case, just use blu tack 🙂
 
 ## Work experience exercises
 TODO: these are currently in a ppt, at some point I'll migrate to md and link from here. 

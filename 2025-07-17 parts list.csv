@@ -1,0 +1,14 @@
+﻿Part,Link, Price/pack (July '25) ,Units/pack,Units/build, Cost/build (July '25),Notes
+Pi pico 2 *with pre-soldered headers*,https://www.digikey.co.uk/en/products/detail/raspberry-pi/SC1632/26241102, £4.41 ,1,1, £4.41 ,
+Neopixel RGB LED,https://www.digikey.co.uk/en/products/detail/adafruit-industries-llc/1312/6565388, £5.84 ,4,1, £1.46 ,I can't source these anywhere pre-soldered :( I've not tried them myself but these push fit headers might be a reasonable solder-free alternative: https://thepihut.com/products/2-54mm-0-1-pitch-press-fit-male-pin-header
+8-bit 10k digital potentiometer,https://www.digikey.co.uk/en/products/detail/microchip-technology/MCP41010-E-P/593689, £1.63 ,1,1, £1.63 ,
+Solderless breadboard,https://www.digikey.co.uk/en/products/detail/dfrobot/FIT0096/7597069, £2.08 ,1,1, £2.08 ,"All the bits for the project should fit on this form factor, but a larger board gives more space to work with. [Version with markup for pico](https://thepihut.com/products/breadboard-for-pico) makes pin placement easier without constantly looking at the pin diagram, but isn't essential."
+"M-M jumper wire ""dupont-style""",https://www.digikey.co.uk/en/products/detail/adafruit-industries-llc/1957/6827090, £1.43 ,20,10, £0.72 ,
+"M-F jumper wire ""dupont-style""",https://www.digikey.co.uk/en/products/detail/adafruit-industries-llc/1954/6827087, £1.43 ,20,4, £0.29 ,
+4k7 resistor (through-hole),https://www.digikey.co.uk/en/products/detail/stackpole-electronics-inc/CF12JT4K70/1741152, £0.07 ,1,1, £0.07 ,
+LC shutter,https://thepihut.com/products/small-liquid-crystal-light-valve-controllable-shutter-glass, £2.80 ,1,1, £2.80 ,
+Phototransistor,https://thepihut.com/products/photo-transistor-light-sensor, £1.00 ,1,1, £1.00 ,
+Preformed jumper wire kit,https://thepihut.com/products/jumper-wire-kit-140-piece, £4.00 ,10,2, £0.80 ,
+Breakaway 2.54 mm header pins,https://thepihut.com/products/break-away-0-1-36-pin-strip-male-header-black-10-pack, £3.50 ,360,10, £0.10 ,
+,,,,,,
+Project cost/build (July '25),,,,, £15.35 ,
