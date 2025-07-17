@@ -1,5 +1,5 @@
 
-# July 2024 work experience tutorials
+# July 2025 work experience tutorials
 
 On [Project AOC](https://www.microsoft.com/en-us/research/project/aim/) we are exploring using an analog-optical computer as alternative hardware to GPUs to accelerate machine learning inference and solving difficult optimisation problems. 
 
@@ -21,6 +21,10 @@ Raspberry Pi Pico doesn't play well with Codespaces 😭 so:
     * Choose a location on your computer to save the repo
     
 * VS Code should show a "recommended extensions" popup: you should install these. If it doesn't, go to the extensions tab on the left of the VS Code screen and search for "MicroPico"
+* To get the codebase to the right point to work through exercises, run the following commands:
+    - `git switch doug/start_here`
+    - `git branch <your first name>/ovmm`
+    - `git switch <your first name>/ovmm`
 
 ## Hardware shopping list
 
